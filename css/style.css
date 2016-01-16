@@ -1,0 +1,20 @@
+header{
+	background: #f00;
+}
+#main{
+	background: #999;
+	margin: auto;
+	width: 1280px;
+	overflow: scroll;
+
+}
+section{
+	background: #0f0;
+	width: 60%;
+	float: left;
+}
+aside{
+	width: 40%;
+	float: right;
+}
+
