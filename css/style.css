@@ -1,20 +1,75 @@
-header{
-	background: #f00;
-}
-#main{
-	background: #999;
-	margin: auto;
-	width: 1280px;
-	overflow: scroll;
+body{
+
+	background: #eee;
 
 }
-section{
-	background: #0f0;
-	width: 60%;
+header{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 40px;
+}
+#main{
+    outline: none;
+
+	width: 95%;
+	background: #0f3;
+	margin: 40px auto;
+	padding: 0;
+
+}
+
+a{
+	font-size: 16px;
+	line-height: 0;
+}
+p{
+	margin: 0;
+}
+li{
+	list-style: none;
+}
+.outer, iframe{
+	margin: 0.5%;
+	padding: 0;
+}
+.inner{
+	padding: 14px;
+}
+section, iframe{
+	width: 67%;
+	float: left;
+	clear: none;
+}
+
+section, aside, iframe, header{
+	background: #fff;
+}
+#video-details .views, .votes{
+	float: right;	
+}
+
+.video-details{
+	float: right;
+	width: 62%;
+}
+
+#similar-videos img, .video-details{
+	margin: 1%;
+}
+#similar-videos img{
+	float: left;
+	width: 30%;
+}
+ li{
+	margin: 10px;
+	display: block;
 	float: left;
 }
+
 aside{
-	width: 40%;
+	clear: none;
+	width: 31%;
 	float: right;
 }
 

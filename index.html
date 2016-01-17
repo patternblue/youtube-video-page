@@ -3,72 +3,146 @@
 <head>
 	<title>The Odin Project: Odin Project: Embedding Images and Video (with YouTube)</title>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	<link rel="stylesheet" type="text/css" href="css/text.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<div id="container">
-		<header>
-			<nav>
-				<img src="#" alt="dropdown menu">
-				<img src="#" alt="Youtube logo">
-				<form>
-					<input>
-				</form>
-			</nav>
+	<header>
+		<nav>
+			<a href="#">YouTube</a>
+			<form>
+				<input>
+			</form>
+		</nav>
 
-		</header>
-		<div id="main">
-			<section>
-				
-				<video>
-					<source src="#" type="video/mp4">
-				</video>
+	</header>
 
-				<div id="video-details">
-					<h1 class="video-title">My Video Title</h1>
-					<h4 class="user-name">Simon Lin</h2>
-					
-					<div class="subscribe">
-						<a href="#">Subscribe</a><span class="subscribers">186</span>
-					</div>
+	<div id="main">
 
-					<span class="views">10,247</span>
-					<div class="like-bar"></div>
-					<nav class="video-interaction">
-						<a href="#">Add to</a>
-						<a href="#">Share</a>
-						<a href="#">More</a>
-						<a href="#" class="likes">56</a>
-					</nav>
-				</div>
+		<iframe height="480" src="https://www.youtube.com/embed/V74l_zS1x8E" frameborder="0" allowfullscreen></iframe>
 
-
-				<div id="video-description">
-					<h4 class="published">Published on Feb 27, 2014</h4>
-					<p>How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github. I'll also describe what kinds of contributions open source software projects are typically looking for. As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails. You can find more information about that project at <a href="http://theodinproject.com">http://theodinproject.com</a>.</p>
-					<div>Show Less</div>
-				</div>
-				<div id="comment-section">
-					<h4>Comments</h4>
-					<form>
-						<input>
-					</form>
-					<ul class="comments">
-
-					</ul>
-				</div>
-			</section>
-
-			<aside>
+		<aside class="outer">
+			<div class="inner">
 				<ul id="similar-videos">
+					<li>
+						<img src="http://img.youtube.com/vi/mENDYhfxH-o/0.jpg" alt="thumbnail of a similar video">
+						<div class="video-details">
+							<a href="#">Contributing to Open Source Part II: The Real Way</a><br/>
+							<a href="#" class="user-name">The Odin Project</a>
+							<p>5613 views</p>
+						</div>
+					</li>
+					<li>
+						<img src="http://img.youtube.com/vi/mENDYhfxH-o/0.jpg" alt="thumbnail of a similar video">
+						<div class="video-details">
+							<a href="#">Contributing to Open Source Part II: The Real Way</a><br/>
+							<a href="#" class="user-name">The Odin Project</a>
+							<p>5613 views</p>
+						</div>
+					</li>
+					<li>
+						<img src="http://img.youtube.com/vi/mENDYhfxH-o/0.jpg" alt="thumbnail of a similar video">
+						<div class="video-details">
+							<a href="#">Contributing to Open Source Part II: The Real Way</a><br/>
+							<a href="#" class="user-name">The Odin Project</a>
+							<p>5613 views</p>
+						</div>
+					</li>
+					<li>
+						<img src="http://img.youtube.com/vi/mENDYhfxH-o/0.jpg" alt="thumbnail of a similar video">
+						<div class="video-details">
+							<a href="#">Contributing to Open Source Part II: The Real Way</a><br/>
+							<a href="#" class="user-name">The Odin Project</a>
+							<p>5613 views</p>
+						</div>
+					</li>
+					<li>
+						<img src="http://img.youtube.com/vi/mENDYhfxH-o/0.jpg" alt="thumbnail of a similar video">
+						<div class="video-details">
+							<a href="#">Contributing to Open Source Part II: The Real Way</a><br/>
+							<a href="#" class="user-name">The Odin Project</a>
+							<p>5613 views</p>
+						</div>
+					</li>
 
 				</ul>
-			</aside>
-		</div>
-		
-		<footer>
+			</div>
+		</aside>
 
-		</footer>
+		<section id="video-details" class="outer">
+			<div class="inner">
+				<h3 class="video-title">Contributing to Open Source Part I: The Easy Way</h3>
+				<a class="user-name">The Odin Project</a>
+				<span class="subscribe">
+					<a href="#">Subscribe</a><span class="subscribers">186</span>
+				</span>
+				<span class="views">10,247</span>
+
+				<div class="like-bar"></div>
+				<div class="video-options">
+					<a href="#">Add to</a>
+					<a href="#">Share</a>
+					<a href="#">More</a>
+					<span class="votes">
+						<a href="#" class="likes">56</a>
+						<a href="#" class="dislikes">0</a>
+					</span>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="video-description" class="outer">
+			<div class="inner">
+				<h5 class="published">Published on Feb 27, 2014</h5>
+				<p>How do you contribute to open source? In this video, I'll describe the easiest way to make a simple contribution to an open source project -- without using the command line, a text editor, "forking a repo", or even touching Git outside of Github. I'll also describe what kinds of contributions open source software projects are typically looking for. As an example, I use submitting a student solution to a web development exercise from The Odin Project, a free online curriculum for learning web development with Ruby on Rails. You can find more information about that project at <a href="http://theodinproject.com">http://theodinproject.com</a>.</p>
+				<div>Show Less</div>
+			<div class="inner">
+		</section>
+
+		<section id="comment-section" class="outer">
+			<div class="inner">
+				<h5>ALL COMMENTS (3)</h5>
+				<form>
+					<input type="text" value="Add a public comment...">
+				</form>
+				<select class="sort-comments" value="0">
+					<option value="0">Top comments</option>
+					<option value="1">Newest first</option>
+				</select>
+				<ul class="comments">
+					<li>
+						<a href="#" class="user-name">Sampath Lokuge</a>
+						<a class="posted">1 month ago</a>
+						<p class="comment">Nice.Thanks a lot :)﻿</p>
+						<div class="comment-options">
+							<a href="#" class="reply">reply</a>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="user-name">Richard Dickinson</a>
+						<a class="posted">1 year ago</a>
+						<p class="comment">I am working through the Odin Project which is good but it took me ages to figure out how to submit my solution to the HTML/CSS project.I posted in all places (on the Odin website, on Google+ and others) and I finally got a reply (thanks hgducherne). However I'm still waiting for the repo admin to accept my pull request, so this has been a slow, tedious process as my first introduction to contributing on GitHub. Shame I didn't see this video earlier and I hope my pull request is dealt with soon.....﻿</p>
+						<div class="comment-options">
+							<a href="#" class="reply">reply</a>
+						</div>
+					</li>
+					<li>
+						<a href="#" class="user-name">andrewscheuermann05</a>
+						<a class="posted">1 year ago</a>
+						<p class="comment">FYI: the edit button has changed to a diagonal pencil﻿</p>
+						<div class="comment-options">
+							<a href="#" class="reply">reply</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
 	</div>
+
+	<footer>
+
+	</footer>
 </body>
 </html>
