@@ -42,7 +42,7 @@ section, iframe{
 	clear: none;
 }
 
-section, aside, iframe, header{
+section, aside, iframe, header, footer{
 	background: #fff;
 }
 #video-details .views, .votes{
@@ -66,10 +66,12 @@ section, aside, iframe, header{
 	display: block;
 	float: left;
 }
-
 aside{
 	clear: none;
 	width: 31%;
 	float: right;
 }
-
+footer{
+	width: 100%;
+	float: left;
+}
